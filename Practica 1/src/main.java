@@ -74,7 +74,7 @@ public class main {
             }
 
         } else {
-            System.out.println("Error detectado porfavor ingrese 1, 2, 3 o 4");
+            System.out.println("Error detectado porfavor vuelva a ejecutar el programa e ingrese unicamente 1, 2, 3 o 4");
             System.exit(0);
         }
     }
