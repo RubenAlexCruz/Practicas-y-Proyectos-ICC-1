@@ -13,11 +13,11 @@ public class main {
     }
 
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("CALCULADORA");
-        System.out.println("Para Sumar Presione 1" + "\n" + "Para Multiplicar Presione 2" + "\n" + "para Dividir persione 3");
+        System.out.println("Para Sumar Presione 1" + "\n" + "Para Multiplicar Presione 2" + "\n" + "Para Dividir persione 3" + "\n" + "Para jugar verdadero o falso persione 4");
         
         int respuestaInt = scanner.nextInt();
 
@@ -57,8 +57,24 @@ public class main {
             System.out.println("El resultado de " + PrimerNumero + " / " + SegundoNumero + " es " + Dividir(PrimerNumero, SegundoNumero));
             System.exit(0);
 
-        }else {
-            System.out.println("Error detectado porfavor ingrese 1, 2 o 3");
+        } else if (respuestaInt == 4){
+            int randomInt = (int)(Math.random() * 2);
+            System.out.println("Se ha elegido un numero aleatorio entre 0 y 1" + "\n" + "Escriba 'false' si cree que el numero es 0 o 'true' si cree que el numero es 1");
+            boolean respuestaJuego = scanner.nextBoolean();
+            if (respuestaJuego && (randomInt == 1)){
+                System.out.println("Felicidades ha ganado el juego");
+                System.exit(0);
+            } else if (!respuestaJuego && (randomInt == 0)) {
+                System.out.println("Felicidades ha ganado el juego");
+                System.exit(0);
+
+            } else {
+                System.out.println("Lo lamento ha perdido el juego");
+                System.exit(0);
+            }
+
+        } else {
+            System.out.println("Error detectado porfavor ingrese 1, 2, 3 o 4");
             System.exit(0);
         }
     }
