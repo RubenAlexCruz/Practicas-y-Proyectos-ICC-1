@@ -1,3 +1,7 @@
+/**
+ * Clase para recipientes cilíndricos
+ * @author Ruben Cruz
+ */
 public class Recipiente implements ServiciosRecipiente {
     private double altura;
     private double radio;
