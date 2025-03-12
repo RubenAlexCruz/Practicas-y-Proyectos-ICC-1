@@ -15,4 +15,4 @@ El único inconveniente al crear la clase recipiente fue continuanmente tener qu
 
 ## Instrucciones para ejecutar
 
-Para ejectuar el programa descargue los 3 documentos java que se encuentra en el folder 'src' (ServiciosRecipiente, Recipiente, Main) y ejecutar unicamente el programa Main.java utilizando 
+Para ejectuar el programa descargue los 3 documentos java que se encuentra en el folder 'src' (ServiciosRecipiente, Recipiente, Main), o copiar el codigo en 3 documentos diferentes en programa y ejecutar unicamente el programa Main.java utilizando un compilador java
