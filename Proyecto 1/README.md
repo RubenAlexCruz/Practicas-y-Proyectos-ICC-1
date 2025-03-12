@@ -1,6 +1,6 @@
 ## Integrantes
 
-Ruben Alejandro Cruz Martinez
+Rubén Alejandro Cruz Martínez
 
 ## Estructura del proyecto
 
