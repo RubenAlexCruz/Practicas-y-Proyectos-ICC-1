@@ -1,18 +1,18 @@
-## Getting Started
+## Integrantes
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Ruben Alejandro Cruz Martinez
 
-## Folder Structure
+## Estructura del proyecto
 
-The workspace contains two folders by default, where:
+El Proyecto esta organizado dentro del folder 'src' en 3 documentso Java: 
+  - ServiciosRecipiente.java que es la interfaz especificada para el proyecto
+  - Recipiente.java que es la clase en donde se encuentran los metodos del proyecto
+  - Main.java que es el programa que se ejecuta en el cual se verifica todos los funcinamientos de la clase Recipiente.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Inconvenientes
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+El único inconveniente al crear la clase recipiente fue continuanmente tener que usar la ecuación para el volumen de un cilíndro que dejo de serlo al implementar el volumen del contenedor como un atributo que se genera al construir cualquier Recipiente creando la capacidad de poder llamarlo cuando sea necesario.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Instrucciones para ejecutar
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Para ejectuar el programa descargue los 3 documentos java que se encuentra en el folder 'src' (ServiciosRecipiente, Recipiente, Main) y ejecutar unicamente el programa Main.java utilizando 
