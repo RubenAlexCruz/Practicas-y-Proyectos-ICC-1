@@ -9,7 +9,7 @@ public class Reloj {
     
     public Reloj (){
         this.hora = new Manecilla(0, 360);
-        /*El límite de hora lo utilizo como 360 para simular más cercanamente a la realidad 
+        /* El límite de hora lo utilizo como 360 para simular más cercanamente a la realidad 
          * el funcionamiento de un reloj de manecillas normal. Cada hora sera dividia en intervalos de 30
          * significando que la hora 1 sera de los valores 30 - 59 con la hora 2 empezando en 60. Esto se hace
          * dado que la manecilla de horas avanza con la manecilla de los minutos, por ejemplo si la hora actual fueran 
@@ -23,15 +23,31 @@ public class Reloj {
         this.segundos = new Manecilla(0, 60);
     }
 
+
+    /**
+     * Get el valor de la manecilla de segundos
+     * 
+     * @return segundos
+     */
     public int getSegundos(){
         return this.segundos.getValor();
     }
 
+    /**
+     * Get el valor de la manecilla de minutos
+     * 
+     * @return minutos
+     */
     public int getMinutos(){
         return this.minutos.getValor();
     }
 
-    // Se divide por 30 el valor para dar el resultado que el usario espera
+    /**
+     * Get el valor de la manecilla de horas el cual se divide por 30 para dar el
+     * resultado que espera el usario
+     * 
+     * @return horas
+     */
     public int getHora(){
         int resp = this.hora.getValor() / 30;
         return resp;
@@ -39,36 +55,60 @@ public class Reloj {
 
     /*
      * Como el metodo setValor de la clase Manecilla ya verificar que el valor de la manecilla no supere su limite
-     * no es necesario volverlo a hacer en la clase Reloj
+     * no es necesario volverlo a hacer para los metodos set de la clase Reloj
      */
 
 
+    /**
+     * Set para el valor de la manecilla de segundos
+     * 
+     * @param segundos
+     */
     public void setSegundos(int segundos) {
         this.segundos.setValor(segundos);
 
     }
 
-    // Como el valor de las horas depende de los minutos se modifica igual el valor de la hora
+    /**
+     * Set para el valor de la manecilla de minutos
+     * Como el valor de las horas depende de los minutos se modifica igual el valor de la hora
+     * 
+     * @param minutos
+     */
     public void setMinutos (int minutos) {
         int horaActual = this.hora.getValor();
         this.minutos.setValor(minutos);
         this.hora.setValor(horaActual + (minutos/2));
     }
 
-    // Se múltiplica por 30 pensando que el usario ingresara el numero de la hora que quiere que sea
+    /**
+     * Set para el valor de la manecilla de horas
+     * Se múltiplica por 30 pensando que el usario ingresara el numero de la hora que quiere que sea
+     * 
+     * @param horas
+     */
     public void setHoras (int horas) {
        this.hora.setValor(horas * 30);
     }
 
-    /*
-     * Al igual que los sets no es necesario saber si el nuevo valor es mayor al límite dado que el 
-     * metodo setValor ya lidia con eso
+    //Al igual que los sets no es necesario saber si el nuevo valor es mayor al límite para los metodos agregar de la clase reloj
+
+    /**
+     * Agrega horas al reloj, se multiplica el parametro por 30 para modificar apropiadamente el valor de la manecilla de hora
+     * 
+     * @param hora
      */
     public void agregarHoras(int hora) {
         int horaNueva = this.hora.getValor() + (hora * 30);
         this.hora.setValor(horaNueva);
     }
 
+    /**
+     * Agrega minutos al reloj, si el valor del parametro es mayor que el límite agrega
+     * las horas necesarias
+     * 
+     * @param minutos
+     */
     public void agregarMinutos(int minutos){
         int minutoNuevo = this.minutos.getValor() + minutos;
         this.minutos.setValor(minutoNuevo);
@@ -77,6 +117,12 @@ public class Reloj {
         }
     }
 
+    /**
+     * Agrega segundos al reloj, si el valor del parametro es mayor que el límite agrega
+     * los minutos necesarios
+     * 
+     * @param segundos
+     */
     public void agregarSegundos (int segundos){
         int segundoNuevo = this.segundos.getValor() + segundos;
         this.segundos.setValor(segundoNuevo);
@@ -85,13 +131,18 @@ public class Reloj {
         }
     }
 
+    /**
+     * Muestra una version analoga del reloj con formato HH:MM:SS 
+     * 
+     * @return un String que de la hora en formato analogo
+     */
     public String mostrarAnalogo (){
         String resp = "" ;
         //Variables boolean para representar si los valores de horas, minutos y segundos son menores a 10
         boolean h = this.getHora() < 10;
         boolean m = this.getMinutos() < 10;
         boolean s = this.getSegundos() < 10;
-        //Como el iterador switch no funicona correctamente con boolean se utilizan if y if else para representar los diferentes casos 
+        //Como el iterador switch no funicona correctamente con boolean se utilizan if  para representar los diferentes casos necesarios
         if (h & m & s){
             resp += "0" + this.getHora() + ":0" + this.getMinutos() + ":0" + this.getSegundos();
 
