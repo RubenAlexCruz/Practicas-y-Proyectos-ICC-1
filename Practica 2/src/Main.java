@@ -50,7 +50,7 @@ public class Main {
                 for (int i = 0 ; i < 12 ; i++ ) {
                     System.out.println(reloj.mostrarAnalogo());
                     reloj.agregarSegundos(30);
-                    Thread.sleep(1000);
+                    Thread.sleep(1000); // Utilizo un segundo de pausa para que sea facil leer el progreso del metodo
                 }
                 break;
             case 2:
