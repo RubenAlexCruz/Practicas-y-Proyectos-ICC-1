@@ -12,13 +12,14 @@ public class Manecilla {
         this.valor = valor;
         this.limite = limite;
         if (this.valor >= this.limite){
-            this.valor = valor % limite;
+            this.valor = valor % limite; 
         }
-        // Se utiliza un if para verificar que el valor no exceda el límite y si sí simplemente resetea el mod del valor respecto al límite
+        // Se utiliza un if para verificar que el valor no exceda el límite y si sí simplemente se saca el modulo del valor original respecto al límite.
     }
 
     /**
      * Get para el valor de una manecilla
+     *
      * @return el valor de la manecilla
      */
     public int getValor(){
