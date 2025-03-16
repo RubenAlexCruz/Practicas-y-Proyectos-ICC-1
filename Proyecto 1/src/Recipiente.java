@@ -17,43 +17,67 @@ public class Recipiente implements ServiciosRecipiente {
 
         // Manera de checar que el volumen de liquido no supere la capacidad máxima del recipiente y si si establecer el liquido como la capacidad máxima
         if (this.liquido > this.volumen){
-            System.err.println("Error: Capacidad máxima excedida, cantidad establecida como el máximo" + "\n");
+            System.err.println("Error: Capacidad máxima excedida, cantidad establecida como el máximo\n");
             this.liquido = this.volumen;
         }
     }
 
     /**
     * Metodo para set la altura del Recipiente
-    * @param 
+    * 
+    * @param la altura nueva 
     */ 
     public void setAltura(double altura) {
         this.altura = altura;
     }
 
+    /**
+    * Metodo para set el radio del Recipiente
+    * 
+    * @param el radio nuevo 
+    */ 
     public void setRadio(double radio) {
         this.radio = radio;
     }
 
+    /**
+    * Metodo para set la cantidad de liquido en el Recipiente
+    * 
+    * @param la cantidad nueva 
+    */ 
     public void setLiquido(double liquido) {
         this.liquido = liquido;
     }
 
-    public void setVolumen(double volumen){
-        this.volumen = volumen;
-    }
-
+    /**
+    * Metodo para obtener el radio actual del Recipiente
+    *
+    * @return el radio del Recipiente
+    */
     public double getRadio() {
         return radio;
     }
 
+    /**
+    * Metodo para obtener el liquido actual del Recipiente
+    *
+    * @return la cantidad actual de liquido en el Recipiente
+    */
     public double getLiquido() {
         return liquido;
     }
 
+    /**
+    * Metodo para obtener la altura actual del Recipiente
+    *
+    * @return la altura del Recipiente
+    */
     public double getAltura(){
         return this.altura;
     }
 
+    // no es necesario hacer javadoc para los metodos de la interfaz dado que ya estan comentados 
+    
     public double capacidad() {
         return this.volumen;
 
