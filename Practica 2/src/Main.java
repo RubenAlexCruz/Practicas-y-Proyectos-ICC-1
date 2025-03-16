@@ -6,7 +6,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Reloj reloj = new Reloj();
 
-        //Pruebas de la funcionalidad de los metodos de la clase reloj. borre el comentario para accionarlos
+        //Pruebas de la funcionalidad de los metodos de la clase Reloj. borre el comentario para accionarlos
         /* 
         System.out.println("Prueba del metodo mostrarAnalogo en ceros");
         System.out.println(reloj.mostrarAnalogo());
