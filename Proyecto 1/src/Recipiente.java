@@ -21,7 +21,10 @@ public class Recipiente implements ServiciosRecipiente {
             this.liquido = this.volumen;
         }
     }
-    
+
+    /**
+    *
+    */ 
     public void setAltura(double altura) {
         this.altura = altura;
     }
