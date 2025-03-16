@@ -9,13 +9,12 @@ public class Reloj {
     
     public Reloj (){
         this.hora = new Manecilla(0, 360);
-        /* El límite de hora lo utilizo como 360 para simular más cercanamente a la realidad 
-         * el funcionamiento de un reloj de manecillas normal. Cada hora sera dividia en intervalos de 30
-         * significando que la hora 1 sera de los valores 30 - 59 con la hora 2 empezando en 60. Esto se hace
-         * dado que la manecilla de horas avanza con la manecilla de los minutos, por ejemplo si la hora actual fueran 
+        /* El límite de hora lo utilizo como 360 para simular más cercanamente a el funcionamiento de un reloj de manecillas normal. 
+         * Cada hora sera dividia en intervalos de 30 significando que la hora 1 sera de los valores 30 - 59 con la hora 2 empezando en 60.
+         * Esto se hace dado que la manecilla de horas avanza con la manecilla de los minutos, por ejemplo si la hora actual fueran 
          * la 01:50 la manecilla de la hora estara más cerca de la hora 2 que de la hora 1.
-         * usando 360 (los grados de un circulo) como el límite se tiene que el valor de hora incrementa por 1 cada 2 minutos
-         * Usando el mismo ejemplo la manecilla de minutos tendría valor 50 y la manecilla de hora tendría  valor 55 = 30 (1 hora) + 25 (minutos / 2)
+         * Usando 360 (los grados de un circulo) como el límite se tiene que el valor de hora incrementa por 1 cada 2 minutos
+         * Usando el mismo ejemplo (01:50) la manecilla de minutos tendría valor 50 y la manecilla de hora tendría  valor 55 = 30 (1 hora) + 25 (minutos / 2)
          * Debido a esto cada vez que se utilize el valor de la manecilla hora se tendra que dividir o multiplicar por 30 (360/12)
          * dependiendo de la situación y si se llegan a modificar los minutos se tendra que modificar de igual manera el valor de la hora.
          */
@@ -132,7 +131,9 @@ public class Reloj {
     }
 
     /**
-     * Muestra una version analoga del reloj con formato HH:MM:SS 
+     * Muestra una version analoga del reloj con formato HH:MM:SS.
+     * Se modifica la respuesta del metodo dependiendo de si la hora, los miuntos o los segundos son menores a 10
+     * para siempre lograr el formato pedido.
      * 
      * @return un String que de la hora en formato analogo
      */
