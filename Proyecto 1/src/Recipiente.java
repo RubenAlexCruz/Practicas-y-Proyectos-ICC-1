@@ -23,7 +23,8 @@ public class Recipiente implements ServiciosRecipiente {
     }
 
     /**
-    *
+    * Metodo para set la altura del Recipiente
+    * @param 
     */ 
     public void setAltura(double altura) {
         this.altura = altura;
