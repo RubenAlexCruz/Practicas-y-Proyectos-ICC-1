@@ -1,18 +1,15 @@
-## Getting Started
+## Integrantes
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Rubén Alejandro Cruz Martínez
 
-## Folder Structure
+## Estructura del proyecto
 
-The workspace contains two folders by default, where:
+El Proyecto esta organizado dentro del folder 'src' en un único documento Java Main.java.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Inconvenientes
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Hubo algunos inconvenientes. Primero en el metodo decifrarPalabrasMarcadas fue complicado configurar el metodo para poder lidar con Strings de diferentes tamaños dado que las palabras se podrían marcar agregando o quitando letras. Tambíen la clase Scanner presento inconvenientes cuando se conbinaban los metodos .nextInt() y .nextLine() dado que .nextInt no se cierra con el siguiente salto de linea.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Instrucciones para ejecutar
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Para ejectuar el programa descargue el documento Main.java que se encuentra en el folder 'src' ó copie el codigo en una aplicación Java. Ejecute el programa Main.java utilizando un compilador Java y siga las instrucciones de la consola.
