@@ -1,18 +1,5 @@
-## Getting Started
+## Instrucciones para ejectuar el codigo
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+1. localize los 5 documentos .java que se encuentran dentro del folder 'src' (Cuadrado, Triangulo, Rectangulo, FiguraGeometrica, Main)
+2. Copiar en 5 documentos diferentes el contenido de cada codigo en una aplicación Java o descargar independientemente los 5 archivos y abrirlos en una aplicación Java
+3. Copilar y ejectuar el archivo Main.java en una aplicaión Java
